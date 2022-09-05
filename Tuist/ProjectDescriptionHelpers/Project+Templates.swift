@@ -7,7 +7,7 @@ import ProjectDescription
 
 extension Project {
     
-    static let bundleID = "com.cheonsong.tuist"
+    static let bundleID = "com.cheonsong"
     static let iosVersion = "13.0"
     
     /// Helper function to create the Project for this ExampleApp
@@ -18,7 +18,7 @@ extension Project {
         return self.project(
             name: name,
             product: .app,
-            bundleID: bundleID,
+            bundleID: bundleID + ".\(name)",
             dependencies: dependencies
         )
     }
@@ -30,7 +30,7 @@ extension Project {
     ) -> Project {
         return .project(name: name,
                         product: .framework,
-                        bundleID: bundleID,
+                        bundleID: bundleID + ".\(name)",
                         dependencies: dependencies)
     }
     
