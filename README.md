@@ -10,7 +10,7 @@
 │   ├── DesignSystem
 │   ├── Domain
 │   ├── Presantation
-│   └── Repository
+│   └── Data
 ├── Projects.xcworkspace
 │   ├── xcshareddata
 │   └── xcuserdata
