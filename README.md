@@ -21,4 +21,4 @@ CleanArchitecture With Tuist Templete
 ```
 
 ### Dependency
-Only SPM
+SPM + Cocoapods
