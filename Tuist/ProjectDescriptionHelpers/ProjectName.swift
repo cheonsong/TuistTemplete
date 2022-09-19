@@ -12,8 +12,8 @@ public enum Module {
     // Repository|DataStore
     case data
     
-    // Presantation
-    case presantation
+    // Presentation
+    case presentation
     
     // Domain
     case domain
@@ -29,8 +29,8 @@ extension Module {
             return "App"
         case .data:
             return "Data"
-        case .presantation:
-            return "Presantation"
+        case .presentation:
+            return "Presentation"
         case .domain:
             return "Domain"
         case .designSystem:
