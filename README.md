@@ -1,5 +1,5 @@
 ## Tuist Templete
-프로젝트 빌드업을 위한 내가 사용할 Tuist Templete
+CleanArchitecture With Tuist Templete
 
 ### Directory
 ```
