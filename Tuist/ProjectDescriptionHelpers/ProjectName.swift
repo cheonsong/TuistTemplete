@@ -10,7 +10,7 @@ import ProjectDescription
 public enum Module {
     case app
     // Repository|DataStore
-    case repository
+    case data
     
     // Presantation
     case presantation
@@ -27,8 +27,8 @@ extension Module {
         switch self {
         case .app:
             return "App"
-        case .repository:
-            return "Repository"
+        case .data:
+            return "Data"
         case .presantation:
             return "Presantation"
         case .domain:
