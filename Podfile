@@ -9,11 +9,11 @@ workspace 'Projects'
 project 'Projects/App.xcodeproj'
 project 'Projects/Domain.xcodeproj'
 project 'Projects/DesignSystem.xcodeproj'
-project 'Projects/Presantation.xcodeproj'
+project 'Projects/Presentation.xcodeproj'
 project 'Projects/Data.xcodeproj'
 
 target 'App' do
-  project 'Diary/App/App.xcodeproj'
+  project 'Projects/App/App.xcodeproj'
 
 end
 
@@ -22,19 +22,19 @@ target 'Domain' do
 
 end
 
-target 'Design' do
+target 'DesignSystem' do
   project 'Projects/DesignSystem/DesignSystem.xcodeproj'
 
 end
 
-target 'Presantation' do
-  project 'Projects/Presantation/Presantation.xcodeproj'
+target 'Presentation' do
+  project 'Projects/Presentation/Presentation.xcodeproj'
 
 
 end
 
 target 'Data' do
-  project 'Projects/Repository/Data.xcodeproj'
+  project 'Projects/Data/Data.xcodeproj'
 
 
 end

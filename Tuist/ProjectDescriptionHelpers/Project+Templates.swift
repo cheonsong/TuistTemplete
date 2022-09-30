@@ -13,25 +13,29 @@ extension Project {
     /// Helper function to create the Project for this ExampleApp
     public static func app(
         name: String,
-        dependencies: [TargetDependency] = []
+        dependencies: [TargetDependency] = [],
+        resources: ProjectDescription.ResourceFileElements? = nil
     ) -> Project {
         return self.project(
             name: name,
             product: .app,
-            bundleID: bundleID + ".\(name)",
-            dependencies: dependencies
+            bundleID: bundleID + "\(name)",
+            dependencies: dependencies,
+            resources: resources
         )
     }
 }
 
 extension Project {
     public static func framework(name: String,
-                                 dependencies: [TargetDependency] = []
+                                 dependencies: [TargetDependency] = [],
+                                 resources: ProjectDescription.ResourceFileElements? = nil
     ) -> Project {
         return .project(name: name,
                         product: .framework,
                         bundleID: bundleID + ".\(name)",
-                        dependencies: dependencies)
+                        dependencies: dependencies,
+                        resources: resources)
     }
     
     
@@ -40,7 +44,9 @@ extension Project {
         name: String,
         product: Product,
         bundleID: String,
-        dependencies: [TargetDependency] = []
+        schemes: [Scheme] = [],
+        dependencies: [TargetDependency] = [],
+        resources: ProjectDescription.ResourceFileElements? = nil
     ) -> Project {
         return Project(
             name: name,
@@ -53,7 +59,7 @@ extension Project {
                     deploymentTarget: .iOS(targetVersion: iosVersion, devices: [.iphone, .ipad]),
                     infoPlist: .file(path: .relativeToRoot("Supporting Files/Info.plist")),
                     sources: ["Sources/**"],
-                    resources: [],
+                    resources: resources,
                     dependencies: dependencies
                 ),
                 Target(
@@ -68,7 +74,8 @@ extension Project {
                         .target(name: "\(name)")
                     ]
                 )
-            ]
+            ],
+            schemes: schemes
         )
     }
 }
