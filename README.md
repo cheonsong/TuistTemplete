@@ -3,21 +3,36 @@ CleanArchitecture With Tuist Templete
 
 ### Directory
 ```
+├── Makefile
 ├── Plugins
 │   └── Tuist
+├── Podfile
+├── Podfile.lock
+├── Pods
+│   ├── Headers
+│   ├── Local Podspecs
+│   ├── Manifest.lock
+│   ├── Pods.xcodeproj
+│   └── Target Support Files
 ├── Projects
 │   ├── App
+│   ├── Data
 │   ├── DesignSystem
 │   ├── Domain
-│   ├── Presantation
-│   └── Data
+│   └── Presentation
 ├── Projects.xcworkspace
+│   ├── contents.xcworkspacedata
 │   ├── xcshareddata
 │   └── xcuserdata
+├── README.md
 ├── Supporting Files
-└── Tuist
-    ├── Dependencies
-    └── ProjectDescriptionHelpers
+│   └── Info.plist
+├── Tuist
+│   ├── Config.swift
+│   ├── Dependencies
+│   ├── Dependencies.swift
+│   └── ProjectDescriptionHelpers
+└── Workspace.swift
 ```
 
 ### Dependency
