@@ -6,20 +6,12 @@ CleanArchitecture With Tuist Templete
 ├── Makefile
 ├── Plugins
 │   └── Tuist
-├── Podfile
-├── Podfile.lock
-├── Pods
-│   ├── Headers
-│   ├── Local Podspecs
-│   ├── Manifest.lock
-│   ├── Pods.xcodeproj
-│   └── Target Support Files
 ├── Projects
 │   ├── App
-│   ├── Data
-│   ├── DesignSystem
+│   ├── Feature
 │   ├── Domain
-│   └── Presentation
+│   ├── Core
+│   └── DesignSystem
 ├── Projects.xcworkspace
 │   ├── contents.xcworkspacedata
 │   ├── xcshareddata
