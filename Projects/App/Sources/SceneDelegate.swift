@@ -8,8 +8,7 @@
 import UIKit
 import DesignSystem
 import Domain
-import Repository
-import Presantation
+import Feature
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -27,11 +26,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = vc
         self.window = window
         window.makeKeyAndVisible()
-        
-        DesignTest()
-        DomainTest()
-        RepositoryTest()
-        PresentationTest()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

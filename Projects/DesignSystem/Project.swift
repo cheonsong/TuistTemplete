@@ -1,6 +1,16 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project.framework(name: Module.designSystem.name,
-                                dependencies: [],
-                                resources: .default)
+let protject = Project.project(
+  name: Module.DesignSystem.rawValue,
+  targets: [
+    Target.target(
+      name: Module.DesignSystem.rawValue,
+      product: .staticFramework,
+      sources: .sources,
+      resources: .default,
+      dependencies: [
+      ]
+    )
+  ]
+)
